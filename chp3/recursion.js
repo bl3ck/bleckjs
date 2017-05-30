@@ -1,4 +1,5 @@
 function isEven(x){
+    x = Math.abs(x);
     if(x === 0){
         return true;
     }else if(x === 1){
@@ -7,4 +8,4 @@ function isEven(x){
        return x = isEven(x - 2);
 }
 
-console.log(isEven(-1));
+console.log(isEven(-2));
