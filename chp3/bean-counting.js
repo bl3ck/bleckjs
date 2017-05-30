@@ -1,11 +1,11 @@
-function countBs(text){
+function countChar(text,letter){
     var bCount = 0;
     for(var i = 0; i < text.length; i++){
-        if(text[i] == 'B'){
+        if(text[i] == letter){
             bCount++;
         }
     }
     return bCount
 }
 
-console.log(countBs('biBh'));
+console.log(countChar('biBh','h'));
