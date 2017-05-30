@@ -7,4 +7,4 @@ function isEven(x){
        return x = isEven(x - 2);
 }
 
-console.log(isEven(50));
+console.log(isEven(-1));
