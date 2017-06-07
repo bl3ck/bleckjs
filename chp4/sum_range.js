@@ -5,14 +5,20 @@
 */
 my_array = [];
 
-function range(start, end){
-    for(var i = start; i <= end; i++){
-        my_array.push(i);
+function range(start, end, increment){
+    if(increment > 0){
+       for(var i = start; i <= end; i++){
+            my_array.push(i);
+        } 
+    }else{
+        for(var i = start; i >= end; i = i + increment){
+            my_array.push(i);
+        }
     }
     return my_array;
 }
 
-console.log(range(1,5));
+console.log(range(5,2,-1));
 
 // Modification: Implementing the sum function which takes an array and returns its sum
 
