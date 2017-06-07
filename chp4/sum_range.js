@@ -12,4 +12,16 @@ function range(start, end){
     return my_array;
 }
 
-console.log(range(4,9));
+console.log(range(1,5));
+
+// Modification: Implementing the sum function which takes an array and returns its sum
+
+function sum(array){
+    var totSum = 0;
+    for(var i = 0; i < array.length; i++){
+        totSum += array[i];
+    }
+    return totSum;
+}
+
+console.log(sum(my_array));
