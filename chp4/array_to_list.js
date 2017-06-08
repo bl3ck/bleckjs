@@ -5,7 +5,7 @@
 
 function arrayToList(array){
      var list = null;
-    for(var i = 0; i < array.length; i++){
+    for(var i = 0; i = array.length; i++){
         list = {'value': array[i],'rest':list};
     }return list;
     
@@ -24,3 +24,4 @@ function listToArray(list){
     return myArray;
 }
 console.log(listToArray(arrayToList([1,2,3])));
+
