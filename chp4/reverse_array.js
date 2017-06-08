@@ -16,6 +16,7 @@ function reverseArray(array){
 var a = [1,2,3,4,5]
 console.log(reverseArray(a));
 
+// Function to reverse a given array in place.
 function reverseArrayInPlace(array){
     var j = array.length - 1;
     for(var i = 0; i <= j; i++){
